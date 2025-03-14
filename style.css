@@ -1,0 +1,199 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+/* the Ecuador flag is at 50% opacity & stored in the images folder */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('Images/EcuadorFlag.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+header {
+    background-color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2rem; 
+    margin: 0;
+    color: #364151;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #364151;
+    font-size: 1.125rem;
+    padding: .5rem 1rem;
+    transition: border 0.3s ease;
+}
+
+nav ul li a:hover {
+    border: 2px solid white;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 30px;
+}
+
+.profile-img {
+    width: 300px; 
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.about-text {
+    padding: 20px;
+    background-color: #212C4C;
+    border-radius: 5px;
+    color: white;
+    text-align: left;
+    max-width: 550px;
+}
+
+.profile-box {
+    background-color: #212C4C;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+/* EXPERIENCE SECTION */
+.experience-section {
+    padding: 30px;
+}
+
+.experience-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.experience-box {
+    background-color: #212C4C; /* Apply background color to the boxes */
+    padding: 20px;
+    width: 30%;
+    border-radius: 10px;
+    text-align: left;
+}
+
+/* INTERESTS SECTION */
+.interests-section {
+    padding: 30px;
+    background-color: transparent; /* Keep background transparent */
+}
+
+.interests-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.interest-box {
+    background-color: #212C4C; /* Apply background color to the boxes */
+    padding: 20px;
+    width: 45%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.interest-box img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+footer p {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.footer-img {
+    width: 50px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px; /* Align the bear image to the left */
+}
+
+/* Ensure responsive layout for navigation and sections */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-img {
+        width: 150px;
+        margin-right: 0;
+    }
+
+    .experience-container,
+    .interests-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .experience-box,
+    .interest-box {
+        width: 90%;
+    }
+}
+
+
+
