@@ -90,7 +90,6 @@ nav ul li a:hover {
     width: 100%;
 }
 
-/* EXPERIENCE SECTION */
 .experience-section {
     padding: 30px;
 }
@@ -104,17 +103,15 @@ nav ul li a:hover {
 }
 
 .experience-box {
-    background-color: #212C4C; /* Apply background color to the boxes */
+    background-color: #212C4C;
     padding: 20px;
     width: 30%;
     border-radius: 10px;
     text-align: left;
 }
 
-/* INTERESTS SECTION */
 .interests-section {
     padding: 30px;
-    background-color: transparent; /* Keep background transparent */
 }
 
 .interests-container {
@@ -126,7 +123,7 @@ nav ul li a:hover {
 }
 
 .interest-box {
-    background-color: #212C4C; /* Apply background color to the boxes */
+    background-color: #212C4C;
     padding: 20px;
     width: 45%;
     max-width: 400px;
@@ -139,28 +136,23 @@ nav ul li a:hover {
     border-radius: 10px;
 }
 
-/* FOOTER */
 footer {
     margin-top: 30px;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.8);
     text-align: center;
-    padding-bottom: 50px;
 }
 
 footer p {
     font-style: italic;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .footer-img {
     width: 50px;
-    position: absolute;
-    bottom: 10px;
-    left: 10px; /* Align the bear image to the left */
+    position: center;
 }
 
-/* Ensure responsive layout for navigation and sections */
 @media screen and (max-width: 768px) {
     header {
         flex-direction: column;
